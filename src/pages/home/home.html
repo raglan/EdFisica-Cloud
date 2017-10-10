@@ -1,19 +1,34 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title >EdFisica - Cloud</ion-title>
-  </ion-navbar>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+            <ion-icon name="contact"></ion-icon>
+          </button>
+    </ion-buttons>
+    <ion-title>EdFisica - Cloud</ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content no-padding>
   <h2 class="corTitulo">Avaliações Físicas</h2>
+  <ion-row>
+  <ion-card col-5>
+    <img src="img/card-saopaolo.png"/>
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+  </ion-card>
 
-<ion-card>
-  <img class="logoTipo" src="/assets/icon/edFisica.png"/>
-  
-  <button ion-button block > Login </button>
-
-</ion-card>
+  <ion-card col-5>
+    <ion-icon name="add-circle"></ion-icon>
+    <div class="card-title">Amsterdam</div>
+    <div class="card-subtitle">64 Listings</div>
+  </ion-card>
+  </ion-row>
+ 
 </ion-content>

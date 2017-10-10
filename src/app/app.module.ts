@@ -18,6 +18,9 @@ import { CalculadoraRcqPage } from "../pages/calculadoras/calculadora-rcq/calcul
 import { Calculadora1RmPage } from "../pages/calculadoras/calculadora-1rm/calculadora-1rm";
 import { Calculadora7DobrasPage } from "../pages/calculadoras/calculadora-7dobras/calculadora-7dobras";
 
+import { LoginPage } from "../pages/login/login";
+
+import { GraficosPage } from "../pages/graficos/graficos";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -39,7 +42,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Calculadora1RmPage,
     CalculadoraImcPage,
     CalculadoraRcqPage,
-    Calculadora7DobrasPage
+    Calculadora7DobrasPage,
+
+    LoginPage,
+
+    GraficosPage
   ],
   imports: [
     BrowserModule,
@@ -61,7 +68,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Calculadora1RmPage,
     CalculadoraImcPage,
     CalculadoraRcqPage,
-    Calculadora7DobrasPage
+    Calculadora7DobrasPage,
+
+    LoginPage,
+
+    GraficosPage
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,52 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    <ion-title>Graficos</ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+      <ion-segment [(ngModel)]="graf">
+        <ion-segment-button value="grafBarra">
+          Barra
+        </ion-segment-button>
+        <ion-segment-button value="grafPizza">
+          Pizza
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div [ngSwitch]="graf">
+  <ion-list *ngSwitchCase="'graficos'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-1.jpg">
+      </ion-thumbnail>
+      <h2>Num1</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-2.jpg">
+      </ion-thumbnail>
+      <h2>Num2</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-4.jpg">
+      </ion-thumbnail>
+      <h2>Num3</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>Num4</h2>
+    </ion-item>
+  </ion-list>
+  </div>
+</ion-content>
