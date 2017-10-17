@@ -21,38 +21,28 @@
   <!-- <h3 align="center">Avaliações Físicas</h3> -->
 
   <ion-row>
-    <ion-card col-5>
-      <img class="card-ion-icon" src="/assets/icon/avaliacao.png"/>
-      <div class="card-subtitle">Avaliações</div>
-    </ion-card>
-
-    <ion-card col-5>
-      <img class="card-ion-icon" src="/assets/icon/calculadora.png"/>
-      <div class="card-subtitle">Calculadoras</div>
+    <ion-card col-5 *ngFor="let item of items" (click)="acessar(item)">
+      <img class="card-ion-icon" src={{item.src}} />
+      <div class="card-subtitle">{{item.title}}</div>
     </ion-card>
   </ion-row>
 
   <ion-row>
+      <ion-card col-5 *ngFor="let item of items2" (click)="acessar(item)">
+        <img class="card-ion-icon" src={{item.src}} />
+        <div class="card-subtitle">{{item.title}}</div>
+      </ion-card>
+    </ion-row>
+
+  <ion-row>
     <ion-card col-5>
-      <img class="card-ion-icon" src="/assets/icon/grafico.png"/>
-      <div class="card-subtitle">Gráficos</div>
+      <img class="card-ion-icon" src="/assets/icon/usuarios.png"(click)="acessar()"/>
+      <div class="card-subtitle">Usuários</div>
     </ion-card>
   
     <ion-card col-5>
-      <img class="card-ion-icon" src="/assets/icon/mensagem.png"/>
-      <div class="card-subtitle">Mensagens</div>
+      <img class="card-ion-icon" src="/assets/icon/logout.png"(click)="acessar(LoginPage)"/>
+      <div class="card-subtitle">Sair</div>
     </ion-card>
-  </ion-row> 
-
-    <ion-row>
-      <ion-card col-5>
-        <img class="card-ion-icon" src="/assets/icon/usuarios.png"/>
-        <div class="card-subtitle">Usuários</div>
-      </ion-card>
-    
-      <ion-card col-5>
-        <img class="card-ion-icon" src="/assets/icon/logout.png"/>
-        <div class="card-subtitle">Sair</div>
-      </ion-card>
-      </ion-row> 
+    </ion-row> 
 </ion-content>
