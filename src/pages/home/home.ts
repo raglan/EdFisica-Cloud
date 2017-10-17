@@ -15,6 +15,7 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
     this.items = [{title:'Avaliações', src:'/assets/icon/avaliacao.png', page: AvaliacoesPage},
                   {title:'Calculadoras', src:'/assets/icon/calculadora.png', page: CalculadorasPage}]
+                  
     this.items2 = [{title:'Gráficos', src:'/assets/icon/grafico.png', page: GraficosPage},
                   {title:'Mensagens', src:'/assets/icon/mensagem.png', page: GraficosPage}]
   }
