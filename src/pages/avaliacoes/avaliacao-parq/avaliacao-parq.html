@@ -5,14 +5,122 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>avaliacaoPARQ</ion-title>
-  </ion-navbar>
-
+  
+    <ion-navbar>
+      <ion-title>avaliacaoPARQ</ion-title>
+    </ion-navbar>
+  
 </ion-header>
-
-
-<ion-content padding>
-
-</ion-content>
+  
+  
+  <ion-content>
+  
+    <div class="container" style="padding-right: 2%;padding-left: 2%">
+      <!-- conteudo da pagina -->
+      <div class="container">
+          <div class="col-md-7" style="margin-top:20px;margin-bottom:20px;">
+                         
+                      <div id="titulo" text-justify> 1 - Alguma vez um médico lhe disse que você possui um problema do coração e recomendou que só fizesse atividade física sob supervisão médica? </div>
+                          <div class="alpaca-control radio" >
+                              <label>
+                                  <input type="radio" name="opcao1">
+                                  Sim 
+                              </label>
+                          </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao1" >
+                                  Não 
+                              </label>
+                          </div>
+      
+                      <div id="titulo"text-justify> 2 - Você sente dor no peito causada pela prática de atividade física? </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao2">
+                                  Sim 
+                              </label>
+                          </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao2" >
+                                  Não 
+                              </label>
+                          </div>
+                                  
+                      <div id="titulo" text-justify> 3 - Você sentiu dor no peito no ultimo mês ? </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao3">
+                                  Sim 
+                              </label>
+                          </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao3" >
+                                  Não 
+                              </label>
+                          </div>                                                       
+      
+                      <div id="titulo" text-justify> 4 - Você tende a perde a consciência ou cair, como resultado de tonteira? </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao4">
+                                  Sim 
+                              </label>
+                          </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao4" >
+                                  Não 
+                              </label>
+                          </div>                         
+      
+                      <div id="titulo" text-justify> 5 - Você tem algum problema ósseo ou muscular que poderia ser agravado com a prática de atividade física? </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao5">
+                                  Sim 
+                              </label>
+                          </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao5" >
+                                  Não 
+                              </label>
+                          </div>
+      
+                      <div id="titulo" text-justify> 6 - Algum médico já recomendou o uso de medicamento para a sua pressão arterail ou condição física? </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao6">
+                                  Sim 
+                              </label>
+                          </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao6" >
+                                  Não 
+                              </label>
+                          </div>
+      
+                      <div id="titulo" text-justify> 7 - Você tem consciência, através da sua própria experiência ou aconselhamento médico, de alguma outra razão física que impeça sua prática de atividade física sem supervisão médica? </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao7">
+                                  Sim 
+                              </label>
+                          </div>
+                          <div class="alpaca-control radio">
+                              <label>
+                                  <input type="radio" name="opcao7" >
+                                  Não 
+                              </label>
+                          </div>
+                          <button ion-button block (click)="resultado()"> Resultado </button>
+                          
+            </div>
+        </div>
+    </div>
+      
+  </ion-content>
