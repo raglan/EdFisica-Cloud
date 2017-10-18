@@ -10,4 +10,6 @@ import { AvaliacaoCoronarianoPage } from './avaliacao-coronariano';
     IonicPageModule.forChild(AvaliacaoCoronarianoPage),
   ],
 })
-export class AvaliacaoCoronarianoPageModule {}
+export class AvaliacaoCoronarianoPageModule {
+  
+}
