@@ -19,6 +19,7 @@ import { CalculadoraRcqPage } from "../pages/calculadoras/calculadora-rcq/calcul
 import { Calculadora1RmPage } from "../pages/calculadoras/calculadora-1rm/calculadora-1rm";
 import { Calculadora7DobrasPage } from "../pages/calculadoras/calculadora-7dobras/calculadora-7dobras";
 
+import { CadastroPage } from "../pages/cadastro/cadastro";
 import { LoginPage } from "../pages/login/login";
 
 import { GraficosPage } from "../pages/graficos/graficos";
@@ -53,6 +54,7 @@ var config = {
     CalculadoraRcqPage,
     Calculadora7DobrasPage,
 
+    CadastroPage,
     LoginPage,
 
     GraficosPage
@@ -80,6 +82,7 @@ var config = {
     CalculadoraRcqPage,
     Calculadora7DobrasPage,
 
+    CadastroPage, 
     LoginPage,
 
     GraficosPage

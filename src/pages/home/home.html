@@ -31,17 +31,13 @@
         <img class="card-ion-icon" src={{item.src}} />
         <div class="card-subtitle">{{item.title}}</div>
       </ion-card>
-    </ion-row>
+  </ion-row>
 
   <ion-row>
-    <ion-card col-5>
-      <img class="card-ion-icon" src="/assets/icon/usuarios.png"(click)="acessar()"/>
-      <div class="card-subtitle">Usuários</div>
+    <ion-card col-5 *ngFor="let item of items3" (click)="acessar(item)">
+      <img class="card-ion-icon" src={{item.src}} />
+      <div class="card-subtitle">{{item.title}}</div>
     </ion-card>
-  
-    <ion-card col-5>
-      <img class="card-ion-icon" src="/assets/icon/logout.png"(click)="acessar(LoginPage)"/>
-      <div class="card-subtitle">Sair</div>
-    </ion-card>
-    </ion-row> 
+</ion-row>
+
 </ion-content>
