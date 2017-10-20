@@ -13,6 +13,76 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+    <ion-list>
+        <ion-row>
+            <ion-item>
+                <ion-input type="number" placeholder="Subescapular"></ion-input>
+            </ion-item>                        
+        </ion-row>
+        <ion-row>
+            <ion-item>
+                <ion-input type="number" placeholder="Tríceps"></ion-input>
+            </ion-item>                        
+        </ion-row>
+        <ion-row>
+            <ion-item>
+                <ion-input type="number" placeholder="Peitoral"></ion-input>
+            </ion-item>                        
+        </ion-row>
+        <ion-row>
+            <ion-item>
+                <ion-input type="number" placeholder="Axilar média"></ion-input>
+            </ion-item>                        
+        </ion-row>
+        <ion-row>
+            <ion-item>
+                <ion-input type="number" placeholder="Supra-ilíaca"></ion-input>
+            </ion-item>                        
+        </ion-row>
+        <ion-row>
+            <ion-item>
+                <ion-input type="number" placeholder="Abdominal"></ion-input>
+            </ion-item>                        
+        </ion-row>
+        <ion-row>
+            <ion-item>
+                <ion-input type="number" placeholder="Femural médio"></ion-input>
+            </ion-item>                        
+        </ion-row>
+        
+        
+        <div class="row" style="padding-top:20px;">
+            <div class="col-md-3 col-md-offset-7 text-right">
+                <label class="control-label" >Total:</label>         
+            </div>
+            <div class="col-md-2">                             
+                <input class="form-control input-md" placeholder="" required="" type="float" maxlength="3" pattern="^\d{2}.\d{1}$">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-6 text-right" style="padding-top:10px;">
+                <label class="control-label" >Massa Magra (Kg):</label>         
+            </div>
+            <div class="col-md-2" style="padding-top:10px;">                             
+                <input class="form-control input-md" placeholder="" required="" type="float" maxlength="3" pattern="^\d{2}.\d{1}$">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-6 text-right" style="padding-top:10px;">
+                <label class="control-label" >Percentual Gordura (%):</label>         
+            </div>
+            <div class="col-md-2" style="padding-top:10px;">                             
+                <input class="form-control input-md" placeholder="" required="" type="float" maxlength="3" pattern="^\d{2}.\d{1}$">
+            </div>
+        </div>
+        <ion-row>
+            <ion-item>
+                <button ion-button > Resultado </button>
+            </ion-item>
+        </ion-row> 
+
+    </ion-list>
+
 
 </ion-content>
