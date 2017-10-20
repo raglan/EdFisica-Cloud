@@ -1,10 +1,7 @@
-
 <ion-header>
-
   <ion-navbar>
     <ion-title>Cadastro do Paciente</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 <ion-content padding>
@@ -12,42 +9,42 @@
 
     <ion-item>
       <ion-label fixed>Nome</ion-label>
-      <ion-input type="text" value=""></ion-input>
+      <ion-input type="text" [(ngModel)]="paciente.nome"></ion-input>
     </ion-item>
     <ion-item>
         <ion-label fixed>Nascimento</ion-label>
-        <ion-input type="date" value=""></ion-input>
+        <ion-input type="date" [(ngModel)]="paciente.nascimento"></ion-input>
     </ion-item>
     <ion-item>
         <ion-label fixed>Telefone</ion-label>
-        <ion-input type="number" value=""></ion-input>
+        <ion-input type="number" [(ngModel)]="paciente.telefone"></ion-input>
     </ion-item>
     <ion-item>
         <ion-label fixed>Email</ion-label>
-        <ion-input type="text" value=""></ion-input>
+        <ion-input type="text" [(ngModel)]="paciente.email"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Sexo</ion-label>
-      <ion-select [(ngModel)]="sexo">
+      <ion-select [(ngModel)]="paciente.sexo">
         <ion-option value="masc">Masculino</ion-option>
         <ion-option value="fem">Feminino</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
         <ion-label fixed>Altura</ion-label>
-        <ion-input type="number" value=""></ion-input>
+        <ion-input type="number" [(ngModel)]="paciente.altura"></ion-input>
     </ion-item>
     <ion-item>
         <ion-label fixed>Peso</ion-label>
-        <ion-input type="number" value=""></ion-input>
+        <ion-input type="number" [(ngModel)]="paciente.peso"></ion-input>
     </ion-item>
     <ion-item>
         <ion-label fixed>Envergadura</ion-label>
-        <ion-input type="number" value=""></ion-input>
+        <ion-input type="number" [(ngModel)]="paciente.envergadura"></ion-input>
     </ion-item>
     <ion-item>
         <ion-label>Raça</ion-label>
-        <ion-select [(ngModel)]="raca">
+        <ion-select [(ngModel)]="paciente.raca">
           <ion-option value="amarelo">Amarelo</ion-option>
           <ion-option value="branco">Branco</ion-option>
           <ion-option value="indio">Índio</ion-option>
@@ -57,14 +54,14 @@
     </ion-item>
     <ion-item>
         <ion-label>Limitação</ion-label>
-        <ion-select [(ngModel)]="limitacao">
+        <ion-select [(ngModel)]="paciente.limitacao">
           <ion-option value="sim">Sim</ion-option>
           <ion-option value="nao">Não</ion-option>
         </ion-select>
     </ion-item>
 
     <ion-item>
-      <button ion-button>Cadastrar</button>
+      <button ion-button block (click)="cadastrar()">Cadastrar</button>
     </ion-item>
 
   </ion-list>

@@ -20,6 +20,7 @@ import { Calculadora1RmPage } from "../pages/calculadoras/calculadora-1rm/calcul
 import { Calculadora7DobrasPage } from "../pages/calculadoras/calculadora-7dobras/calculadora-7dobras";
 
 import { CadastroPage } from "../pages/cadastro/cadastro";
+import { ListaPacientesPage } from "../pages/lista-pacientes/lista-pacientes";
 import { LoginPage } from "../pages/login/login";
 
 import { GraficosPage } from "../pages/graficos/graficos";
@@ -32,7 +33,7 @@ var config = {
   authDomain: "edfisica-cloud.firebaseapp.com",
   databaseURL: "https://edfisica-cloud.firebaseio.com",
   projectId: "edfisica-cloud",
-  storageBucket: "",
+  storageBucket: "edfisica-cloud.appspot.com",
   messagingSenderId: "310515219152"
 };
 
@@ -55,6 +56,7 @@ var config = {
     Calculadora7DobrasPage,
 
     CadastroPage,
+    ListaPacientesPage,
     LoginPage,
 
     GraficosPage
@@ -83,6 +85,7 @@ var config = {
     Calculadora7DobrasPage,
 
     CadastroPage, 
+    ListaPacientesPage,
     LoginPage,
 
     GraficosPage
