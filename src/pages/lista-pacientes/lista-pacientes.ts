@@ -7,7 +7,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'lista-pacientes.html',
 })
 export class ListaPacientesPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

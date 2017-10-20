@@ -10,4 +10,6 @@ import { ListaPacientesPage } from './lista-pacientes';
     IonicPageModule.forChild(ListaPacientesPage),
   ],
 })
-export class ListaPacientesPageModule {}
+export class ListaPacientesPageModule {
+  
+}
