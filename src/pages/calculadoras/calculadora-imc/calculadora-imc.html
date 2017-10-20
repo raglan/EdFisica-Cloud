@@ -11,21 +11,26 @@
   </ion-navbar>
 
 </ion-header>
+<ion-content >
+    <ion-list>
+        <ion-item>
+          <ion-label stacked>Peso</ion-label>
+          <ion-input type="float"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label stacked>Altura</ion-label>
+          <ion-input type="int"></ion-input>
+        </ion-item>
+        <p></p>
+        <div class="input-group"style="padding-left: 50%;">
+          <span class="input-group-addon">Resultado: </span>
+          <input id="imcResult" name="Resultado" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+        </div>
+      
+        <button ion-button>Resultado</button>
+    </ion-list>
 
-<ion-list>
-    <ion-item>
-      <ion-label stacked>Peso</ion-label>
-      <ion-input type="float"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label stacked>Altura</ion-label>
-      <ion-input type="int"></ion-input>
-    </ion-item>
-  
-    <button ion-button>Resultado</button>
-  </ion-list>
 
-<ion-content padding>
 
 </ion-content>
