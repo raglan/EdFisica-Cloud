@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { AngularFireDatabase } from 'angularfire2/database';
 import { FirebaseListObservable } from 'angularfire2';
+import { ListaPacientesPage } from "../lista-pacientes/lista-pacientes";
 
 export class Paciente{
   nome: String;
@@ -35,6 +36,7 @@ export class CadastroPage {
   cadastrar(){
     this.lista.push(this.paciente).then(() => {this.paciente = new Paciente();
     });
+    this.navCtrl.push(ListaPacientesPage)
   }
 
   ionViewDidLoad() {

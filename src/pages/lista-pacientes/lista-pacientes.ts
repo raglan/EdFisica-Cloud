@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Paciente } from "../cadastro/cadastro";
+
+import { AngularFireDatabase } from 'angularfire2/database';
+import { FirebaseListObservable } from 'angularfire2';
+
 
 @IonicPage()
 @Component({
@@ -7,7 +12,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'lista-pacientes.html',
 })
 export class ListaPacientesPage {
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  paciente: Paciente;
+  listaPacientes: FirebaseListObservable<any>;
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, public db: AngularFireDatabase) {
+    this.listaPacientes = this.db.list('/pacientes');
+    this.paciente = new Paciente();
   }
 
   ionViewDidLoad() {

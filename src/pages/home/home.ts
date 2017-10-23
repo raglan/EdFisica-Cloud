@@ -4,6 +4,7 @@ import { CalculadorasPage } from "../calculadoras/calculadoras";
 import { AvaliacoesPage } from "../avaliacoes/avaliacoes";
 import { GraficosPage } from "../graficos/graficos";
 import { CadastroPage } from "../cadastro/cadastro";
+import { ListaPacientesPage } from "../lista-pacientes/lista-pacientes";
 
 @Component({
   selector: 'page-home',
@@ -19,10 +20,14 @@ export class HomePage {
                   {title:'Calculadoras', src:'/assets/icon/calculadora.png', page: CalculadorasPage}]
                   
     this.items2 = [{title:'Gráficos', src:'/assets/icon/grafico.png', page: GraficosPage},
-                  {title:'Pacientes', src:'/assets/icon/usuarios.png', page: CadastroPage}]
-
+                  {title:'Pacientes', src:'/assets/icon/usuarios.png', page: ListaPacientesPage}]
+                  // {title:'Pacientes', src:'/assets/icon/usuarios.png', page: CadastroPage}
   }
   acessar(item){
     this.navCtrl.push(item.page)
   }
+  acessarCadastro(){
+    this.navCtrl.push(CadastroPage)
+  }
+  
 }
