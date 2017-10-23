@@ -12,25 +12,33 @@
 
 </ion-header>
 <ion-content >
-    <ion-list>
-        <ion-item>
-          <ion-label fixed>Peso</ion-label>
-          <ion-input type="float"></ion-input>
-        </ion-item>
+  <ion-list>
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+        <ion-select [(ngModel)]="imc.sexo">
+          <ion-option value="masc">Masculino</ion-option>
+          <ion-option value="fem">Feminino</ion-option>
+        </ion-select>
+      </ion-item>
+    <ion-item>
       
-        <ion-item>
-          <ion-label fixed>Altura</ion-label>
-          <ion-input type="int"></ion-input>
-        </ion-item>
-        <p></p>
-        <div class="input-group"style="padding-left: 50%;">
-          <span class="input-group-addon">Resultado: </span>
-          <input id="imcResult" name="Resultado" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-        </div>
-        <ion-item >
-          <button ion-button  > Resultado </button>
-        </ion-item>
-    </ion-list>
+      <ion-input for="altura" type="number" placeholder="Altura em metros"[(ngModel)]="imc.altura"></ion-input>
+    </ion-item>
+    <ion-item>
+      
+      <ion-input for="peso" type="number" placeholder="Peso em Kg"[(ngModel)]="imc.peso"></ion-input>
+     
+    </ion-item>
+    
+
+    <ion-item>
+      <button ion-button (click)="calcula_imc()">Calcular</button>
+    </ion-item>
+  </ion-list>
+    
+    
+  
+    
 
 
 
