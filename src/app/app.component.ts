@@ -48,12 +48,3 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 }
-const unsubscribe = firebase.auth().onAuthStateChanged( user => {
-  if (!user) {
-    this.rootPage = 'LoginPage';
-    unsubscribe();
-  } else { 
-    this.rootPage = HomePage;
-    unsubscribe();
-  }
-});
