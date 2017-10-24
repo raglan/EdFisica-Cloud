@@ -17,23 +17,21 @@
   <ion-list>
       <ion-item>
         <ion-label>Sexo</ion-label>
-          <ion-select [(ngModel)]="sexo">
+          <ion-select [(ngModel)]="fcm.sexo">
             <ion-option value="masc">Masculino</ion-option>
             <ion-option value="fem">Feminino</ion-option>
           </ion-select>
         </ion-item>
+        
         <ion-item>
-            <ion-label fixed>Idade</ion-label>
-            <ion-input type="number" value=""></ion-input>
+          
+          <ion-input for="peso" type="number" placeholder="Idade"[(ngModel)]="fcm.idade"></ion-input>
+         
         </ion-item>
-        <p></p>
-        <div class="input-group"style="padding-left: 50%;">
-          <span class="input-group-addon">Resultado: </span>
-          <input id="fcmResult" name="Resultado" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-        </div>
+        
 
-        <ion-item >
-            <button ion-button  > Resultado </button>
+        <ion-item>
+          <button ion-button (click)="calcula_fcm()">Calcular</button>
         </ion-item>
 
 
