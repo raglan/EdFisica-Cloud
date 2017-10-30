@@ -15,71 +15,58 @@
 
 <ion-content>
     <ion-list>
+        <ion-item>
+            <ion-label>Sexo</ion-label>
+            <ion-select [(ngModel)]="sexo">
+              <ion-option value="masc">Masculino</ion-option>
+              <ion-option value="fem">Feminino</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-input for="idade" type="number" placeholder="Idade"[(ngModel)]="idade"></ion-input>
+        </ion-item>
         <ion-row>
             <ion-item>
-                <ion-input type="number" placeholder="Subescapular"></ion-input>
+             <ion-input for="Subescapular" type="number" placeholder="Subescapular"[(ngModel)]="subescapular"></ion-input>
             </ion-item>                        
         </ion-row>
         <ion-row>
             <ion-item>
-                <ion-input type="number" placeholder="Tríceps"></ion-input>
+                <ion-input for="Triceps" type="number" placeholder="Triceps"[(ngModel)]="triceps"></ion-input>   
             </ion-item>                        
         </ion-row>
         <ion-row>
             <ion-item>
-                <ion-input type="number" placeholder="Peitoral"></ion-input>
+                    <ion-input for="Peitoral" type="number" placeholder="Peitoral"[(ngModel)]="peitoral"></ion-input> 
             </ion-item>                        
         </ion-row>
         <ion-row>
             <ion-item>
-                <ion-input type="number" placeholder="Axilar média"></ion-input>
+                <ion-input for="AxilarMedia" type="number" placeholder="Axilar média"[(ngModel)]="axilarMedia"></ion-input>
             </ion-item>                        
         </ion-row>
         <ion-row>
             <ion-item>
-                <ion-input type="number" placeholder="Supra-ilíaca"></ion-input>
+                <ion-input for="SupraIliaca" type="number" placeholder="Supra-ilíaca"[(ngModel)]="supraIliaca"></ion-input>
             </ion-item>                        
         </ion-row>
         <ion-row>
             <ion-item>
-                <ion-input type="number" placeholder="Abdominal"></ion-input>
+                <ion-input for="Abdomem" type="number" placeholder="Abdomem"[(ngModel)]="abdomem"></ion-input>
             </ion-item>                        
         </ion-row>
         <ion-row>
             <ion-item>
-                <ion-input type="number" placeholder="Femural médio"></ion-input>
+                <ion-input for="FemuralMedio" type="number" placeholder="Femural médio"[(ngModel)]="femuralMedio"></ion-input>
             </ion-item>                        
         </ion-row>
         
         
-        <div class="row" style="padding-top:20px;">
-            <div class="col-md-3 col-md-offset-7 text-right">
-                <label class="control-label" >Total:</label>         
-            </div>
-            <div class="col-md-2">                             
-                <input class="form-control input-md" placeholder="" required="" type="float" maxlength="3" pattern="^\d{2}.\d{1}$">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-6 text-right" style="padding-top:10px;">
-                <label class="control-label" >Massa Magra (Kg):</label>         
-            </div>
-            <div class="col-md-2" style="padding-top:10px;">                             
-                <input class="form-control input-md" placeholder="" required="" type="float" maxlength="3" pattern="^\d{2}.\d{1}$">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-6 text-right" style="padding-top:10px;">
-                <label class="control-label" >Percentual Gordura (%):</label>         
-            </div>
-            <div class="col-md-2" style="padding-top:10px;">                             
-                <input class="form-control input-md" placeholder="" required="" type="float" maxlength="3" pattern="^\d{2}.\d{1}$">
-            </div>
-        </div>
+        
         <ion-row>
-            <ion-item>
-                <button ion-button > Resultado </button>
-            </ion-item>
+                <ion-item>
+                        <button ion-button (click)="calcula_seteDobras()">Calcular</button>
+                </ion-item>
         </ion-row> 
 
     </ion-list>
