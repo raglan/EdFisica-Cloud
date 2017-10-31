@@ -21,110 +21,68 @@
           <div class="col-md-7" style="margin-top:20px;margin-bottom:20px;">
                          
                       <div id="titulo" text-justify> 1 - Alguma vez um médico lhe disse que você possui um problema do coração e recomendou que só fizesse atividade física sob supervisão médica? </div>
-                          <p></p>
-                          <div class="alpaca-control radio" >
-                              <label>
-                                  <input type="radio" name="opcao1">
-                                  Sim 
-                              </label>
-                          </div>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao1" >
-                                  Não 
-                              </label>
-                          </div>
-                          <p></p>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao1" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
+                          
+                          
                       <div id="titulo"text-justify> 2 - Você sente dor no peito causada pela prática de atividade física? </div>
-                          <p></p>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao2">
-                                  Sim 
-                              </label>
-                          </div>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao2" >
-                                  Não 
-                              </label>
-                          </div>
-                         <p></p>       
+                          
+                        <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao2" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
+
                       <div id="titulo" text-justify> 3 - Você sentiu dor no peito no ultimo mês ? </div>
-                          <p></p>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao3">
-                                  Sim 
-                              </label>
-                          </div>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao3" >
-                                  Não 
-                              </label>
-                          </div>                                                       
-                          <p></p>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao3" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
                       <div id="titulo" text-justify> 4 - Você tende a perde a consciência ou cair, como resultado de tonteira? </div>
-                          <p></p>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao4">
-                                  Sim 
-                              </label>
-                          </div>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao4" >
-                                  Não 
-                              </label>
-                          </div>                         
-                          <p></p>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao4" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
                       <div id="titulo" text-justify> 5 - Você tem algum problema ósseo ou muscular que poderia ser agravado com a prática de atividade física? </div>
-                          <p></p>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao5">
-                                  Sim 
-                              </label>
-                          </div>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao5" >
-                                  Não 
-                              </label>
-                          </div>
-                          <p></p>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao5" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
                       <div id="titulo" text-justify> 6 - Algum médico já recomendou o uso de medicamento para a sua pressão arterail ou condição física? </div>
-                          <p></p>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao6">
-                                  Sim 
-                              </label>
-                          </div>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao6" >
-                                  Não 
-                              </label>
-                          </div>
-                          <p></p>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao6" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
                       <div id="titulo" text-justify> 7 - Você tem consciência, através da sua própria experiência ou aconselhamento médico, de alguma outra razão física que impeça sua prática de atividade física sem supervisão médica? </div>
-                          <p></p>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao7">
-                                  Sim 
-                              </label>
-                          </div>
-                          <div class="alpaca-control radio">
-                              <label>
-                                  <input type="radio" name="opcao7" >
-                                  Não 
-                              </label>
-                          </div>
-                          <button ion-button block (click)="resultado()"> Resultado </button>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao7" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
+                        <ion-item>
+                        <button ion-button (click)="calcula_parq()">Calcular</button>
+                        </ion-item>
                           
             </div>
         </div>
