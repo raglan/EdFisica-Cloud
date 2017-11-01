@@ -27,6 +27,8 @@ import { GraficosPage } from "../pages/graficos/graficos";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AuthProvider } from '../providers/auth/auth';
+
 
 var config = {
   apiKey: "AIzaSyCqZL4-MpsaLxFWGlII5r6ZFzC3xKzU3rI",
@@ -94,6 +96,7 @@ var config = {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthProvider
   ]
 })
 

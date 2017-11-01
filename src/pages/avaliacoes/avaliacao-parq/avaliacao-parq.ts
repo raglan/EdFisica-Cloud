@@ -71,14 +71,7 @@ export class AvaliacaoParqPage {
           } else{
               this.showConfirm(" Pode prosseguir ");
           }
-          // if(this.parq.opcao1 == "nao"||this.parq.opcao2 == "nao"||this.parq.opcao3 == "nao"||this.parq.opcao4 == "nao"
-          // ||this.parq.opcao5 == "nao"||this.parq.opcao6 == "nao"||this.parq.opcao7 == "nao"){
-          
-          // this.showConfirm(" Pode prosseguir ");
-          //}
-        
-          // this.parq = new Parq()
-    }
+        }
 
 }
 

@@ -55,25 +55,26 @@ export class Calculadora7DobrasPage {
       var xb = this.seteDobras.idade;
           
           if(this.seteDobras.sexo == "masc"){
-            var xa= (this.seteDobras.peitoral + this.seteDobras.axilarMedia + this.seteDobras.triceps + this.seteDobras.subescapular 
+            var xa= parseFloat (this.seteDobras.peitoral + this.seteDobras.axilarMedia + this.seteDobras.triceps + this.seteDobras.subescapular 
                       + this.seteDobras.supraIliaca + this.seteDobras.abdomem + this.seteDobras.femuralMedio);
+                      
             this.showConfirm("Seu percentual de gordura é: "+ result);
               
             
                
           }
-          else if(this.seteDobras.sexo == "fem"){
+          else {
             var a = parseFloat ("1,097");
             var b = parseFloat ("0,00046971");
             var c = parseFloat ("0,00000056");
             var d = parseFloat ("0,00012828");
 
-            var xa=  (this.seteDobras.peitoral + this.seteDobras.axilarMedia + this.seteDobras.triceps +this.seteDobras.subescapular 
+            var xb=  parseFloat (this.seteDobras.peitoral + this.seteDobras.axilarMedia + this.seteDobras.triceps + this.seteDobras.subescapular 
                       + this.seteDobras.supraIliaca + this.seteDobras.abdomem + this.seteDobras.femuralMedio);
-            var result = (a)-((b)*(xa))+((c)*(xa)*(c)*(xa))-((d)*(xb)); 
+            var result = (a)-((b)*(xb))+((c*xb)*(c*xb))-((d*xb)); 
             this.showConfirm("Seu percentual de gordura é: "+ result);
 
-                  this.seteDobras = new SeteDobras()
+                  
           }
     
   }
