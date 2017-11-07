@@ -16,20 +16,27 @@
 <ion-content padding>
     <ion-list>
         <ion-item>
-          <ion-input type="number" placeholder="Circunferência da Cintura"></ion-input>
+          <ion-label>Sexo</ion-label>
+            <ion-select [(ngModel)]="rcq.sexo">
+              <ion-option value="masc">Masculino</ion-option>
+              <ion-option value="fem">Feminino</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+          
+          <ion-input for="cintura" type="float" placeholder="Circunferência da Cintura"[(ngModel)]="rcq.cintura"></ion-input>
         </ion-item>
       
         <ion-item>
-          <ion-input type="number" placeholder="Circunferência do Quadril"></ion-input>
+          
+          <ion-input for="quadril" type="float" placeholder="Circunferência do Quadril"[(ngModel)]="rcq.quadril"></ion-input>
         </ion-item>
         <p></p>
-        <div class="input-group"style="padding-left: 50%;">
-          <span class="input-group-addon">Resultado: </span>
-          <input id="rcqResult" name="Resultado" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-        </div>
+       
         <ion-item>
-          <button ion-button > Resultado </button>
-        </ion-item>
+            <button ion-button (click)="calcula_rcq()">Calcular</button>
+          </ion-item>
     </ion-list>
 
 </ion-content>
