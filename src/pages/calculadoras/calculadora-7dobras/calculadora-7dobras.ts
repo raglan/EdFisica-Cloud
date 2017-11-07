@@ -52,30 +52,7 @@ export class Calculadora7DobrasPage {
 
   calcula_seteDobras(){
         
-      var xb = this.seteDobras.idade;
-          
-          if(this.seteDobras.sexo == "masc"){
-            var xa= parseFloat (this.seteDobras.peitoral + this.seteDobras.axilarMedia + this.seteDobras.triceps + this.seteDobras.subescapular 
-                      + this.seteDobras.supraIliaca + this.seteDobras.abdomem + this.seteDobras.femuralMedio);
-                      
-            this.showConfirm("Seu percentual de gordura é: "+ result);
-              
-            
-               
-          }
-          else {
-            var a = parseFloat ("1,097");
-            var b = parseFloat ("0,00046971");
-            var c = parseFloat ("0,00000056");
-            var d = parseFloat ("0,00012828");
-
-            var xb=  parseFloat (this.seteDobras.peitoral + this.seteDobras.axilarMedia + this.seteDobras.triceps + this.seteDobras.subescapular 
-                      + this.seteDobras.supraIliaca + this.seteDobras.abdomem + this.seteDobras.femuralMedio);
-            var result = (a)-((b)*(xb))+((c*xb)*(c*xb))-((d*xb)); 
-            this.showConfirm("Seu percentual de gordura é: "+ result);
-
-                  
-          }
+     
     
   }
 

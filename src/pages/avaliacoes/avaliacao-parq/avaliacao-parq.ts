@@ -71,7 +71,8 @@ export class AvaliacaoParqPage {
           } else{
               this.showConfirm(" Pode prosseguir ");
           }
-        }
+          
+    }
 
 }
 
