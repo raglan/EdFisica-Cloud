@@ -9,14 +9,14 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
  */
 class SeteDobras{
   idade:number;
-  sexo;
-  subescapular;
-  triceps;
-  peitoral;
-  axilarMedia;
-  supraIliaca;
-  abdomem;
-  femuralMedio;
+  setesexo;
+  subescapular:number;
+  triceps:number;
+  peitoral:number;
+  axilarMedia:number;
+  supraIliaca:number;
+  abdomem:number;
+  femuralMedio:number;
 }
 
 @IonicPage()
@@ -51,9 +51,15 @@ export class Calculadora7DobrasPage {
     }
 
   calcula_seteDobras(){
-        
-     
     
+    var somaSete = (this.seteDobras.subescapular+this.seteDobras.triceps+ this.seteDobras.peitoral+
+                    this.seteDobras.supraIliaca+ this.seteDobras.axilarMedia+ this.seteDobras.femuralMedio+
+                    this.seteDobras.abdomem)
+    var quadradosoma = ((somaSete)*(somaSete))
+        
+    var densidade=(1.112)-((0.00043499)*somaSete)+(0.00000055*(quadradosoma))-((0.00028826)*this.seteDobras.idade) 
+     
+    this.showConfirm("Sua densidade é: "+ densidade + somaSete);
   }
 
 }
