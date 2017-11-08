@@ -47,7 +47,8 @@ export class CalculadoraRcqPage {
 
   calcula_rcq(){
         if(this.rcq.sexo == "masc"){
-          var rcqMasc =(this.rcq.cintura/ this.rcq.quadril);
+          var rcqMasc1 =(this.rcq.cintura/ this.rcq.quadril);
+          var rcqMasc = parseFloat(rcqMasc1.toFixed(2))
           if(rcqMasc >= 0.90){
             this.showConfirm("Alto risco para doenças cardiovasculares  "+ rcqMasc);
             }else{
@@ -55,7 +56,8 @@ export class CalculadoraRcqPage {
             }
         }
         else if(this.rcq.sexo == "fem"){
-          var rcqFem = (this.rcq.cintura/ this.rcq.quadril);
+          var rcqFem1 = (this.rcq.cintura/ this.rcq.quadril);
+          var rcqFem = parseFloat(rcqFem1.toFixed(2))
           if(rcqFem >= 0.80){
           this.showConfirm("Alto risco para doenças cardiovasculares  "+ rcqFem);
           }else{

@@ -8,19 +8,16 @@
 <ion-content padding>
   <ion-list>
       <ion-item>
-        <ion-input type="number" placeholder="Peso"></ion-input>
+          <ion-input for="peso" type="number" placeholder="Peso total em kg"[(ngModel)]="umrm.peso"></ion-input>
+        
       </ion-item>
     
       <ion-item>
-        <ion-input type="number" placeholder="Máximo de Repetições"></ion-input>
+          <ion-input for="repeticoes" type="number" placeholder="Máximo de Repetições"[(ngModel)]="umrm.repeticoes"></ion-input> 
+        
       </ion-item>
-      <p></p>
-      <div class="input-group"style="padding-left: 50%;">
-        <span class="input-group-addon">Resultado: </span>
-        <input id="umrmResult" name="Resultado" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-      </div>
       <ion-item>
-        <button ion-button > Resultado </button>
+          <button ion-button (click)="calcula_umrm()">Calcular</button>
       </ion-item>
   </ion-list>
 </ion-content>
