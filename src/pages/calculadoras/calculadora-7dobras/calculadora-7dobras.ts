@@ -52,12 +52,12 @@ export class Calculadora7DobrasPage {
 
   calcula_seteDobras(){
     
-    var somaSete = (this.seteDobras.subescapular+this.seteDobras.triceps+ this.seteDobras.peitoral+
-                    this.seteDobras.supraIliaca+ this.seteDobras.axilarMedia+ this.seteDobras.femuralMedio+
-                    this.seteDobras.abdomem)
+    var somaSete = ((this.seteDobras.subescapular*1)+(this.seteDobras.triceps*1)+ (this.seteDobras.peitoral*1)+
+                    (this.seteDobras.supraIliaca*1)+ (this.seteDobras.axilarMedia*1)+ (this.seteDobras.femuralMedio*1)+
+                    (this.seteDobras.abdomem*1))
     var quadradosoma = ((somaSete)*(somaSete))
         
-    var densidade=(1.112)-((0.00043499)*somaSete)+(0.00000055*(quadradosoma))-((0.00028826)*this.seteDobras.idade) 
+    var densidade=(1.112)-((0.00043499)*somaSete)+(0.00000055*(quadradosoma))-((0.00028826)*(this.seteDobras.idade*1)) 
      
     this.showConfirm("Sua densidade é: "+ densidade + somaSete);
   }
