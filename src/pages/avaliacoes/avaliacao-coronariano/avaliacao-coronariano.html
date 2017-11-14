@@ -13,7 +13,7 @@
 												<ion-item>	
 														<ion-label>R:</ion-label>
 															<ion-select [(ngModel)]="avaliacaoCoronariano.quest1"interface="popover">
-																<ion-option type = "number" value=1>Normal</ion-option>
+																<ion-option type = "number" value=0>Normal</ion-option>
 																<ion-option type = "number" value=2>1 acima de 50 anos</ion-option>
 																<ion-option type = "number" value=3>1 abaixo de 50anos</ion-option>
 															</ion-select>
@@ -23,8 +23,8 @@
 												<ion-item>
 														<ion-label>R:</ion-label>
 															<ion-select [(ngModel)]="avaliacaoCoronariano.quest2"interface="popover">
-																<ion-option  type = "number" value=1>Negativo</ion-option>
-																<ion-option  type = "number" value=2>Duvidoso</ion-option>
+																<ion-option  type = "number" value=0>Negativo</ion-option>
+																<ion-option  type = "number" value=1>Duvidoso</ion-option>
 																<ion-option  type = "number" value=3>Positivo</ion-option>
 															</ion-select>											
 												</ion-item>
@@ -33,9 +33,9 @@
 														<ion-item>
 															<ion-label>R:</ion-label>
 																<ion-select [(ngModel)]="avaliacaoCoronariano.quest3"interface="popover">
-																	<ion-option  type = "number" value=1>Negativo</ion-option>
-																	<ion-option  type = "number" value=2>Duvidoso</ion-option>
-																	<ion-option  type = "number" value=3>Positivo</ion-option>
+																	<ion-option  type = "number" value=0>Negativo</ion-option>
+																	<ion-option  type = "number" value=4>Duvidoso</ion-option>
+																	<ion-option  type = "number" value=8>Positivo</ion-option>
 																</ion-select>											
 														</ion-item>
 												
@@ -44,10 +44,10 @@
 													<ion-item>
 														<ion-label>R:</ion-label>
 															<ion-select [(ngModel)]="avaliacaoCoronariano.quest4"interface="popover">
-																<ion-option  type = "number" value=1>Nenhum</ion-option>
+																<ion-option  type = "number" value=0>Nenhum</ion-option>
 																<ion-option  type = "number" value=2>Entre 1 e 10</ion-option>
 																<ion-option  type = "number" value=3>Entre 11 e 30</ion-option>
-																<ion-option  type = "number" value=3>31 ou Mais</ion-option>
+																<ion-option  type = "number" value=4>31 ou Mais</ion-option>
 															</ion-select>											
 													</ion-item>
 												
@@ -56,9 +56,9 @@
 														<ion-item>
 															<ion-label>R:</ion-label>
 																<ion-select [(ngModel)]="avaliacaoCoronariano.quest5"interface="popover">
-																	<ion-option  type = "number" value=1>Normal</ion-option>
+																	<ion-option  type = "number" value=0>Normal</ion-option>
 																	<ion-option  type = "number" value=2>Entre 10% e 15%</ion-option>
-																	<ion-option  type = "number" value=3>Mais de 15%</ion-option>
+																	<ion-option  type = "number" value=4>Mais de 15%</ion-option>
 																</ion-select>											
 														</ion-item>
 											
@@ -67,9 +67,9 @@
 														<ion-item>
 															<ion-label>R:</ion-label>
 																<ion-select [(ngModel)]="avaliacaoCoronariano.quest6"interface="popover">
-																	<ion-option  type = "number" value=1>Regular</ion-option>
+																	<ion-option  type = "number" value=0>Regular</ion-option>
 																	<ion-option  type = "number" value=2>Infrequente</ion-option>
-																	<ion-option  type = "number" value=3>Nenhuma</ion-option>
+																	<ion-option  type = "number" value=4>Nenhuma</ion-option>
 																</ion-select>											
 														</ion-item>
 												
@@ -78,11 +78,11 @@
 														<ion-item>
 															<ion-label>R:</ion-label>
 																<ion-select [(ngModel)]="avaliacaoCoronariano.quest7"interface="popover">
-																	<ion-option  type = "number" value=1>200</ion-option>
-																	<ion-option  type = "number" value=2>Entre 201 e 230</ion-option>
-																	<ion-option  type = "number" value=3>Entre 231 e 245</ion-option>
+																	<ion-option  type = "number" value=0>200</ion-option>
+																	<ion-option  type = "number" value=1>Entre 201 e 230</ion-option>
+																	<ion-option  type = "number" value=2>Entre 231 e 245</ion-option>
 																	<ion-option  type = "number" value=3>Entre 246 e 275</ion-option>
-																	<ion-option  type = "number" value=3>Mais de 276</ion-option>
+																	<ion-option  type = "number" value=4>Mais de 276</ion-option>
 																</ion-select>											
 														</ion-item>
 												
@@ -91,11 +91,11 @@
 														<ion-item>
 															<ion-label>R:</ion-label>
 																<ion-select [(ngModel)]="avaliacaoCoronariano.quest8"interface="popover">
-																	<ion-option  type = "number" value=1>80</ion-option>
-																	<ion-option  type = "number" value=2>Entre 81 e 115</ion-option>
-																	<ion-option  type = "number" value=3>Entre 116 e 150</ion-option>
+																	<ion-option  type = "number" value=0>80</ion-option>
+																	<ion-option  type = "number" value=1>Entre 81 e 115</ion-option>
+																	<ion-option  type = "number" value=2>Entre 116 e 150</ion-option>
 																	<ion-option  type = "number" value=3>Entre 151 e 250</ion-option>
-																	<ion-option  type = "number" value=3>Mais de 251</ion-option>
+																	<ion-option  type = "number" value=4>Mais de 251</ion-option>
 																</ion-select>											
 														</ion-item>
 												
@@ -104,11 +104,11 @@
 															<ion-item>
 																<ion-label>R:</ion-label>
 																	<ion-select [(ngModel)]="avaliacaoCoronariano.quest9"interface="popover">
-																		<ion-option  type = "number" value=1>Menor que 98</ion-option>
-																		<ion-option  type = "number" value=2>Entre 99 e 104</ion-option>
-																		<ion-option  type = "number" value=3>Entre 105 e 110</ion-option>
+																		<ion-option  type = "number" value=0>Menor que 98</ion-option>
+																		<ion-option  type = "number" value=1>Entre 99 e 104</ion-option>
+																		<ion-option  type = "number" value=2>Entre 105 e 110</ion-option>
 																		<ion-option  type = "number" value=3>Entre 111 e 118</ion-option>
-																		<ion-option  type = "number" value=3>Mais de 119</ion-option>
+																		<ion-option  type = "number" value=4>Mais de 119</ion-option>
 																	</ion-select>											
 															</ion-item>
 												
@@ -117,11 +117,11 @@
 															<ion-item>
 																<ion-label>R:</ion-label>
 																	<ion-select [(ngModel)]="avaliacaoCoronariano.quest10"interface="popover">
-																		<ion-option  type = "number" value=1>Normal</ion-option>
-																		<ion-option  type = "number" value=2>Muito Leve</ion-option>
-																		<ion-option  type = "number" value=3>Moderado</ion-option>
+																		<ion-option  type = "number" value=0>Normal</ion-option>
+																		<ion-option  type = "number" value=1>Muito Leve</ion-option>
+																		<ion-option  type = "number" value=2>Moderado</ion-option>
 																		<ion-option  type = "number" value=3>Alto</ion-option>
-																		<ion-option  type = "number" value=3>Muito Alto</ion-option>
+																		<ion-option  type = "number" value=4>Muito Alto</ion-option>
 																	</ion-select>											
 															</ion-item>
 												
@@ -130,18 +130,18 @@
 														<ion-item>
 															<ion-label>R:</ion-label>
 																<ion-select [(ngModel)]="avaliacaoCoronariano.quest11"interface="popover">
-																	<ion-option  type = "number" value=1>120/80</ion-option>
-																	<ion-option  type = "number" value=2>121-130/81-86</ion-option>
-																	<ion-option  type = "number" value=3>131-140/87-96</ion-option>
+																	<ion-option  type = "number" value=0>120/80</ion-option>
+																	<ion-option  type = "number" value=1>121-130/81-86</ion-option>
+																	<ion-option  type = "number" value=2>131-140/87-96</ion-option>
 																	<ion-option  type = "number" value=3>+140/+97</ion-option>
 																</ion-select>											
 														</ion-item>
 												
 												<ion-row>
 													<ion-item>
-																	<button ion-button (click)="calcula_coronariano()">Calcular</button>
+														<button ion-button (click)="calcula_coronariano()">Calcular</button>
 													</ion-item>
-									</ion-row> 		
+									            </ion-row> 		
 							</div>
 			</div>
 </ion-content>
